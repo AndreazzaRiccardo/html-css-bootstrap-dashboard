@@ -1,0 +1,84 @@
+/* CUSTOM PROPRERTIES */
+
+:root {
+    --ms_background-color-primary:#F8F9FA;
+    --ms_background-color-secondary:#1B72E8;
+    --ms_background-light-grey: #E5E5E5;
+    --ms_color-white: white;
+}
+
+
+/* COMMON */
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* HEADER */
+
+.ms_container-header {
+    background-color: var(--ms_color-white)
+    height: 100%;
+}
+
+.ms_visible-logo {
+    max-width: 56px;
+}
+
+[class*="header-button"] {
+    margin: 0 .7rem;
+    font-size: 1.2rem;
+}
+
+.ms_header-button i {
+    color:#FF8F00 ;
+}
+
+.ms_search-icon {
+    line-height: 38px;
+}
+
+.ms_search-bar {
+    background-color: var(--ms_background-light-grey);
+    border-radius: 5px;
+}
+
+.ms_hidden-header-button {
+    display: none;
+}
+
+.ms_input-search-bar {
+    background-color: var(--ms_background-light-grey);
+    border: none;
+}
+
+.ms_input-search-bar:focus {
+    background-color: var(--ms_background-light-grey);
+    box-shadow: none;
+}
+
+.ms_hidden-logo {
+    display: none;
+}
+
+@media screen and (min-width:992px) {
+
+    .ms_hidden-header-button {
+        display: inline-block;
+    }
+
+    .ms_visible-logo {
+        display: none;
+    }
+
+    .ms_hidden-logo {
+        display: block;
+    }
+}
+
