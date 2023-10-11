@@ -23,12 +23,12 @@ img {
 /* HEADER */
 
 .ms_container-header {
-    background-color: var(--ms_color-white)
+    background-color: var(--ms_color-white);
     height: 100%;
 }
 
 .ms_visible-logo {
-    max-width: 56px;
+    max-width: 46px;
 }
 
 [class*="header-button"] {
@@ -81,4 +81,52 @@ img {
         display: block;
     }
 }
+
+
+/* MAIN */
+
+    /* Left main */
+
+    .ms_left-main {
+        height: calc(100vh - 62px);
+        background-image: url(../img/sidebar-bg.png);
+        background-color: #051E34;
+        padding: 2rem 1rem;
+    }
+
+    .ms_side-buttons a {
+        color: var(--ms_color-white);
+        text-decoration: none;
+    }
+
+    .ms_icon-side {
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+        line-height: 50px;
+    }
+
+    .ms_hidden-text-button {
+        display: none;
+    }
+
+    .ms_side-buttons {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (min-width:992px) {
+
+        .ms_hidden-text-button {
+            display: inline-block;
+        }
+
+        .ms_left-main {
+            width: 160px;
+            padding: 2rem 2rem 2rem 1rem;
+        }
+    }
 

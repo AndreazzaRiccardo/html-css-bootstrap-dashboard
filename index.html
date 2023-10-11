@@ -22,46 +22,108 @@
         <nav class="navbar navbar-light bg-light">
             <div class="container-fluid ms_container-header">
 
+                <!-- Navbar logo -->
                 <a class="navbar-brand ms_logo p-0" href="#">
                     <img src="img/mobile-logo.png" alt="Logo Boolean" class="ms_visible-logo">
                     <img src="img/logo.svg" alt="Logo boolean" class="ms_hidden-logo">
                 </a>
-
+                <!-- Nav search-bar -->
                 <div class="d-flex flex-grow-1 ms_search-bar p-1 ps-2">
                     <span class="ms_search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
                     <form class="d-flex flex-grow-1">
                         <input class="form-control me-2 ms_input-search-bar" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                     </form>
                 </div>
-
+                <!-- Nav buttons -->
                 <ul class="navbar-nav d-flex flex-row">
-
-                  <li class="nav-item ms_hidden-header-button">
-                    <a class="nav-link" aria-current="page" href="#">
-                        <i class="fa-solid fa-list"></i>
-                    </a>
+                    <li class="nav-item ms_hidden-header-button">
+                        <a class="nav-link" aria-current="page" href="#">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms_hidden-header-button">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-circle-question"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms_hidden-header-button">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms_header-button">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
                   </li>
-                  <li class="nav-item ms_hidden-header-button">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-circle-question"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item ms_hidden-header-button">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </a>
-                  </li>
-                  <li class="nav-item ms_header-button">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-bell"></i>
-                    </a>
-                  </li>
-
                 </ul> 
 
             </div>
-          </nav>
+        </nav>
+
     </header>
+
+    <main class="d-flex">
+
+        <!-- Left-main -->
+        <section class="ms_left-main">
+
+            <div class="ms_side-buttons">
+
+                <ul class="list-unstyled text-center">
+                    <li class="mt-2">
+                        <a href="">
+                            <span class="ms_icon-side">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="ms_hidden-text-button">
+                                Home
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="">
+                            <span class="ms_icon-side">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </span>
+                            <span class="ms_hidden-text-button">
+                                Stats
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="">
+                            <span class="ms_icon-side">
+                                <i class="fa-solid fa-signal"></i>
+                            </span>
+                            <span class="ms_hidden-text-button">
+                                Signals
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="">
+                    <span class="ms_icon-side text-center">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+                    <span class="ms_hidden-text-button">
+                        Admin
+                    </span>
+                </a>
+                
+            </div>
+
+        </section>
+        <!-- /Left-main -->
+
+        <!-- Right-main -->
+        <section class="right-main">
+
+        </section>
+        <!-- /Right-main -->
+
+    </main>
 
 
 
