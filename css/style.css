@@ -10,6 +10,12 @@
 
 /* COMMON */
 
+[class*="col-"] {
+    border: 1px solid black;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -68,7 +74,6 @@ img {
 }
 
 @media screen and (min-width:992px) {
-
     .ms_hidden-header-button {
         display: inline-block;
     }
@@ -92,6 +97,7 @@ img {
         background-image: url(../img/sidebar-bg.png);
         background-color: #051E34;
         padding: 2rem 1rem;
+        width: 82px;
     }
 
     .ms_side-buttons a {
@@ -108,6 +114,7 @@ img {
 
     .ms_hidden-text-button {
         display: none;
+        width: 50px;
     }
 
     .ms_side-buttons {
@@ -119,14 +126,64 @@ img {
     }
 
     @media screen and (min-width:992px) {
-
         .ms_hidden-text-button {
             display: inline-block;
         }
 
         .ms_left-main {
-            width: 160px;
+            width: 170px;
             padding: 2rem 2rem 2rem 1rem;
         }
     }
+
+    /* Right main */
+
+    .ms_right-main {
+        height: calc(100vh - 62px);
+        width:calc(100% - 82px);
+        overflow-y: auto;
+    }
+
+    @media screen and (min-width:992px) {
+        .ms_right-main {
+            width: calc(100% - 170px);
+        }
+    }
+
+    /* Table */
+
+    tr td:nth-child(2) {
+        display: none;
+    }
+
+    tr th:nth-child(2) {
+        display: none;
+    }
+
+    tr td:nth-child(3) {
+        display: none;
+    }
+
+    tr th:nth-child(3) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        tr td:nth-child(2) {
+            display:table-cell;
+        }
+    
+        tr th:nth-child(2) {
+            display:table-cell;
+        }
+
+        tr td:nth-child(3) {
+            display:table-cell;
+        }
+    
+        tr th:nth-child(3) {
+            display:table-cell;
+        }
+    }
+
 
