@@ -10,12 +10,6 @@
 
 /* COMMON */
 
-[class*="col-"] {
-    border: 1px solid black;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -184,6 +178,28 @@ img {
         tr th:nth-child(3) {
             display:table-cell;
         }
+    }
+
+    /* Layout main */
+
+    @media screen and (min-width:992px)  {
+        .ms_class-element {
+            order:1;
+        }
+
+        .ms_faq-element {
+            order: 3;
+        }
+
+        .ms_todo-element {
+            order:2;
+        }
+
+        .ms_statistics-element {
+            order:4;
+        }
+
+        
     }
 
 
