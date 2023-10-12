@@ -25,12 +25,12 @@
   <div class="wrapper">
     <header>
       <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid ms_container-header">
+        <div class="container-fluid h-100 bg-light">
 
           <!-- Navbar logo -->
           <a class="navbar-brand ms_logo p-0" href="#">
-            <img src="img/mobile-logo.png" alt="Logo Boolean" class="ms_visible-logo">
-            <img src="img/logo.svg" alt="Logo boolean" class="ms_hidden-logo">
+            <img src="img/mobile-logo.png" alt="Logo Boolean" class="ms_visible-logo d-lg-none">
+            <img src="img/logo.svg" alt="Logo boolean" class="d-none d-lg-block">
           </a>
           <!-- Nav search-bar -->
           <div class="d-flex flex-grow-1 ms_search-bar p-1 ps-2">
@@ -42,17 +42,17 @@
           </div>
           <!-- Nav buttons -->
           <ul class="navbar-nav d-flex flex-row">
-            <li class="nav-item ms_hidden-header-button">
+            <li class="nav-item d-none d-lg-block ms-3 me-2">
               <a class="nav-link" aria-current="page" href="#">
                 <i class="fa-solid fa-list"></i>
               </a>
             </li>
-            <li class="nav-item ms_hidden-header-button">
+            <li class="nav-item d-none d-lg-block ms-3 me-2">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-circle-question"></i>
               </a>
             </li>
-            <li class="nav-item ms_hidden-header-button">
+            <li class="nav-item d-none d-lg-block ms-3 me-2">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </a>
@@ -83,46 +83,46 @@
       <!-- Left-main -->
       <section class="ms_left-main">
 
-        <div class="ms_side-buttons">
+        <div class="h-100 d-flex flex-column justify-content-between">
 
           <ul class="list-unstyled text-center">
             <li class="mt-2">
-              <a href="">
+              <a href="" class="text-decoration-none text-light">
                 <span class="ms_icon-side">
                   <i class="fa-solid fa-house"></i>
                 </span>
-                <span class="ms_hidden-text-button">
+                <span class="d-none d-lg-inline">
                   Home
                 </span>
               </a>
             </li>
             <li class="mt-2">
-              <a href="">
+              <a href="" class="text-decoration-none text-light">
                 <span class="ms_icon-side">
                   <i class="fa-solid fa-chart-simple"></i>
                 </span>
-                <span class="ms_hidden-text-button">
+                <span class="d-none d-lg-inline">
                   Stats
                 </span>
               </a>
             </li>
             <li class="mt-2">
-              <a href="">
+              <a href="" class="text-decoration-none text-light">
                 <span class="ms_icon-side">
                   <i class="fa-solid fa-signal"></i>
                 </span>
-                <span class="ms_hidden-text-button">
+                <span class="d-none d-lg-inline">
                   Signals
                 </span>
               </a>
             </li>
           </ul>
 
-          <a href="">
+          <a href="" class="text-decoration-none text-light">
             <span class="ms_icon-side text-center">
               <i class="fa-solid fa-gear"></i>
             </span>
-            <span class="ms_hidden-text-button">
+            <span class="d-none d-lg-inline">
               Admin
             </span>
           </a>
@@ -133,24 +133,24 @@
       <!-- /Left-main -->
 
       <!-- Right-main -->
-      <section class="ms_right-main">
+      <section class="ms_right-main overflow-auto">
         <!-- Header main -->
-        <div class="container-fluid ms_header-main">
+        <div class="container-fluid text-light bg-primary">
 
           <div class="row g-4 p-3">
 
             <div class="col-12 col-md-4 col-lg-3 order-md-3 d-flex align-items-top justify-content-lg-end">
               <h4>Nuovo Studente</h4>
-              <button class="btn btn-primary ms_btn-canvas ms-3" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+              <button class="btn btn-primary ms_btn-canvas ms-3 text-light fw-bolder" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                 aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
-                  <h5 id="offcanvasRightLabel" class="ms_title-canvas">Inserisci un nuovo studente</h5>
+                  <h5 id="offcanvasRightLabel" class="ms_title-canvas text-dark">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body ms_body-canvas">
+                <div class="offcanvas-body text-dark">
                   <!-- Form canvas -->
                   <form class="row g-3">
                     <div class="col-md-6">
@@ -288,7 +288,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
                             <td>15 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_done">Done</span></td>
+                            <td><span class="bg-success ms_status">Done</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -302,7 +302,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 76</th>
                             <td>16 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_done">Done</span></td>
+                            <td><span class="bg-success ms_status">Done</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -316,7 +316,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 77</th>
                             <td>17 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_process">process</span></td>
+                            <td><span class="bg-warning ms_status">process</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -330,7 +330,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 78</th>
                             <td>18 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_done">Done</span></td>
+                            <td><span class="bg-success ms_status">Done</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -344,7 +344,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 79</th>
                             <td>19 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_failed">failed</span></td>
+                            <td><span class="bg-danger ms_status">failed</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -358,7 +358,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 80</th>
                             <td>20 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_done">Done</span></td>
+                            <td><span class="bg-success ms_status">Done</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -372,7 +372,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 81</th>
                             <td>21 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_failed">failed</span></td>
+                            <td><span class="bg-danger ms_status">failed</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
@@ -386,7 +386,7 @@
                             <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 82</th>
                             <td>22 Feb 2021</td>
                             <td>20%</td>
-                            <td><span class="ms_done">Done</span></td>
+                            <td><span class="bg-success ms_status">Done</span></td>
                             <td>
                               <button class="btn btn-outline-secondary">
                                 <i class="fa-solid fa-pen"></i>
