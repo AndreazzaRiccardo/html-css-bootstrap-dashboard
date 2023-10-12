@@ -144,6 +144,40 @@ img {
         }
     }
 
+    /* Main header */
+
+    .ms_header-main {
+        background-color: var(--ms_background-color-secondary);
+        color: var(--ms_color-white);
+    }
+
+    .ms_main-button {
+        background-color: #165BBA;
+        padding: 0 .5rem;
+        display: inline-block;
+        border-radius: 20px;
+    }
+
+    .ms_btn-canvas {
+        height: 40px;
+        width: 40px;
+        border: 1px solid var(--ms_color-white);
+        color: var(--ms_color-white);
+        font-weight: bolder;
+    }
+
+    .offcanvas-end {
+        width: 70%;
+    }
+
+    .ms_body-canvas {
+        color: black;
+    }
+
+    .ms_title-canvas {
+        color: black;
+    }
+
     /* Table */
 
     tr td:nth-child(2) {
@@ -180,26 +214,6 @@ img {
         }
     }
 
-    /* Layout main */
-
-    @media screen and (min-width:992px)  {
-        .ms_class-element {
-            order:1;
-        }
-
-        .ms_faq-element {
-            order: 3;
-        }
-
-        .ms_todo-element {
-            order:2;
-        }
-
-        .ms_statistics-element {
-            order:4;
-        }
-
-        
-    }
+    
 
 
