@@ -57,10 +57,19 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </a>
             </li>
-            <li class="nav-item ms_header-button">
-              <a class="nav-link" href="#">
+            <li class="nav-item ms_bell-icon ms-2">
+              <a class="nav-link dropdown ms_header-button" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-bell"></i>
               </a>
+              <ul class="dropdown-menu d-lg-none" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Profili</a></li>
+                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+              </ul>
             </li>
           </ul>
 
@@ -125,18 +134,21 @@
 
       <!-- Right-main -->
       <section class="ms_right-main">
-
+        <!-- Header main -->
         <div class="container-fluid ms_header-main">
 
           <div class="row g-4 p-3">
 
             <div class="col-12 col-md-3 order-lg-3 d-flex align-items-center justify-content-lg-end">
               <h4>Nuovo Studente</h4>
-              <button class="btn btn-primary ms_btn-canvas ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"              aria-labelledby="offcanvasRightLabel">
+              <button class="btn btn-primary ms_btn-canvas ms-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                   <h5 id="offcanvasRightLabel" class="ms_title-canvas">Inserisci un nuovo studente</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"              aria-label="Close"></button>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body ms_body-canvas">
                   <!-- Form canvas -->
@@ -205,14 +217,14 @@
                         </label>
                       </div>
                     </div>
-                    
+
                     <div class="col-12">
                       <button type="submit" class="btn btn-primary fw-bold">Salva</button>
-                      <button type="submit" class="btn btn-primary bg-warning border-warning text-dark fw-bold">Svuota</button>
+                      <button type="submit"
+                        class="btn btn-primary bg-warning border-warning text-dark fw-bold">Svuota</button>
                     </div>
-                    
-                  </form>
 
+                  </form>
                   <!-- /Form canvas -->
                 </div>
               </div>
@@ -244,7 +256,9 @@
           </div>
 
         </div>
+        <!-- /Header main -->
 
+        <!-- Cards main -->
         <div class="container-fluid">
 
           <div class="row g-4">
@@ -252,7 +266,7 @@
             <div class="col-12 col-lg-8">
 
               <div class="row g-4">
-
+                <!-- Table -->
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header">
@@ -263,75 +277,133 @@
                         <thead>
                           <tr>
                             <th scope="col">Nome</th>
-                            <th scope="col">Data inizio</th>
-                            <th scope="col">ROI</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col">Azioni</th>
+                            <th scope="col" class="text-center">Data inizio</th>
+                            <th scope="col" class="text-center">ROI</th>
+                            <th scope="col" class="text-center">Stato</th>
+                            <th scope="col" class="text-center">Azioni</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th scope="row">Classe 75</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 75</th>
+                            <td>15 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_done">Done</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 76</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 76</th>
+                            <td>16 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_done">Done</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 77</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 77</th>
+                            <td>17 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_process">process</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 78</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 78</th>
+                            <td>18 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_done">Done</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 79</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 79</th>
+                            <td>19 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_failed">failed</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 80</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 80</th>
+                            <td>20 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_done">Done</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 81</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 81</th>
+                            <td>21 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_failed">failed</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                           <tr>
-                            <th scope="row">Classe 82</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <th scope="row"><img src="img/class-avatar.jpg" alt="">Classe 82</th>
+                            <td>22 Feb 2021</td>
+                            <td>20%</td>
+                            <td><span class="ms_done">Done</span></td>
+                            <td>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-pen"></i>
+                              </button>
+                              <button class="btn btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
                 </div>
+                <!-- /Table -->
 
+                <!-- FAQ -->
                 <div class="col-12">
                   <div class="card">
                     <div class="card-header">
@@ -390,6 +462,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- /FAQ -->
               </div>
             </div>
 
@@ -397,12 +470,13 @@
 
               <div class="row g-4">
                 <div class="col-12">
+                  <!-- Todo section -->
                   <div class="card">
                     <div class="card-header">
                       Todo
                     </div>
                     <div class="card-body">
-                      <div class="card">
+                      <div class="card p-1">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                           <label class="form-check-label" for="flexCheckDefault">
@@ -410,7 +484,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card p-1">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                           <label class="form-check-label" for="flexCheckDefault">
@@ -418,7 +492,7 @@
                           </label>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card p-1">
                         <div class="form-check">
                           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                           <label class="form-check-label" for="flexCheckDefault">
@@ -429,8 +503,10 @@
 
                     </div>
                   </div>
+                  <!-- /Todo section -->
                 </div>
 
+                <!-- Diagram section -->
                 <div class="col-12">
                   <div class="card">
                     <div class="card">
@@ -445,12 +521,12 @@
                         <li class="list-group-item">Marzo: 1500</li>
                       </ul>
                       <div class="card-body">
-                        <a href="#" class="card-link">Visualizza report approfondito</a>
+                        <a href="#" class="card-link fw-bold">Visualizza report approfondito</a>
                       </div>
                     </div>
                   </div>
                 </div>
-
+                <!-- /Diagram section -->
               </div>
 
             </div>
@@ -463,7 +539,7 @@
       <!-- /Right-main -->
 
     </main>
-
+    <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"></script>
